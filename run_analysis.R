@@ -73,3 +73,6 @@ df_summary <- df %>%
 #Finish the tasks
 unlink(temp)
 rm(con, loc, temp)
+
+#Create txt-file
+write.table(df_summary, file="tidy_data_step5", row.name=FALSE)
